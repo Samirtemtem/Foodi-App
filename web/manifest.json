@@ -1,0 +1,23 @@
+{
+    "name": "Foodi Delivery",
+    "short_name": "Foodi",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#FF6E0C",
+    "theme_color": "#D10000",
+    "description": "Fast Delivery, Best Service",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "favicon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "favicon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
