@@ -118,14 +118,15 @@ class AuthController extends GetxController implements GetxService {
 
   void validPassCheck(String pass, {bool isUpdate = true}) {
     _lengthCheck = false;
-    _numberCheck = false;
-    _uppercaseCheck = false;
-    _lowercaseCheck = false;
-    _spatialCheck = false;
+    _numberCheck = true;
+    _uppercaseCheck = true;
+    _lowercaseCheck = true;
+    _spatialCheck = true;
 
     if(pass.length > 7){
       _lengthCheck = true;
     }
+    /*
     if(pass.contains(RegExp(r'[a-z]'))) {
       _lowercaseCheck = true;
     }
@@ -138,6 +139,7 @@ class AuthController extends GetxController implements GetxService {
     if(pass.contains(RegExp(r'[\d+]'))){
       _numberCheck = true;
     }
+    */
     if(isUpdate) {
       update();
     }

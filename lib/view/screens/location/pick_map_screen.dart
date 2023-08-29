@@ -56,7 +56,7 @@ class _PickMapScreenState extends State<PickMapScreen> {
       body: SafeArea(child: Center(child: SizedBox(
         width: Dimensions.webMaxWidth,
         child: GetBuilder<LocationController>(builder: (locationController) {
-          /*print('--------------${'${locationController.pickPlaceMark.name ?? ''} '
+          /*// print('--------------${'${locationController.pickPlaceMark.name ?? ''} '
               '${locationController.pickPlaceMark.locality ?? ''} '
               '${locationController.pickPlaceMark.postalCode ?? ''} ${locationController.pickPlaceMark.country ?? ''}'}');*/
 

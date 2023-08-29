@@ -55,7 +55,7 @@ class BookingCheckoutController extends GetxController implements GetxService{
 
   void updateState(PageState currentPage,{bool shouldUpdate = true}){
     if (kDebugMode) {
-      print('--------------$currentPage');
+      // print('--------------$currentPage');
     }
     currentPage=currentPage;
     if(shouldUpdate){

@@ -161,7 +161,7 @@ class ItemController extends GetxController implements GetxService {
         for (var element in item.choiceOptions!) {
           _variationIndex!.add(0);
           if (kDebugMode) {
-            print(element);
+            // print(element);
           }
         }
       }
@@ -170,7 +170,7 @@ class ItemController extends GetxController implements GetxService {
         _addOnActiveList.add(false);
         _addOnQtyList.add(1);
         if (kDebugMode) {
-          print(addOn);
+          // print(addOn);
         }
       }
       setExistInCart(item, notify: false);
@@ -322,7 +322,7 @@ class ItemController extends GetxController implements GetxService {
       _loadingList.add(false);
       _submitList.add(false);
       if (kDebugMode) {
-        print(orderDetails);
+        // print(orderDetails);
       }
     }
   }

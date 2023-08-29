@@ -33,7 +33,7 @@ class _SelectMapLocationState extends State<SelectMapLocation> {
     super.initState();
 
     if (kDebugMode) {
-      print('-------rider type : ${widget.riderType}/ ${widget.address}');
+      // print('-------rider type : ${widget.riderType}/ ${widget.address}');
     }
 
     Get.find<RiderController>().initializeData(widget.riderType, widget.address);
@@ -150,7 +150,7 @@ class _SelectMapLocationState extends State<SelectMapLocation> {
 
   Widget expandableContent(RiderType riderType, RiderController riderController, Vehicles? vehicle){
     if (kDebugMode) {
-      print("===----- rider type name : ${riderType.name}");
+      // print("===----- rider type name : ${riderType.name}");
     }
     switch (riderType) {
       case RiderType.availableCar:
@@ -162,7 +162,7 @@ class _SelectMapLocationState extends State<SelectMapLocation> {
         return GetBuilder<RiderController>(
           builder: (riderController) {
             if (kDebugMode) {
-              print('-----------= : ${riderController.toAddress == null} / ${riderController.toTextEditingController.text == ''}');
+              // print('-----------= : ${riderController.toAddress == null} / ${riderController.toTextEditingController.text == ''}');
             }
             return Container(
               height: 85,

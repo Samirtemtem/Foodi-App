@@ -364,7 +364,7 @@ class OrderController extends GetxController implements GetxService {
       _orderAttachment = null;
       _rawAttachment = null;
       if (kDebugMode) {
-        print('-------- Order placed successfully $orderID ----------');
+        // print('-------- Order placed successfully $orderID ----------');
       }
     } else {
       callback(false, response.statusText, '-1', zoneID, amount, maximumCodOrderAmount);
@@ -391,7 +391,7 @@ class OrderController extends GetxController implements GetxService {
       _orderAttachment = null;
       _rawAttachment = null;
       if (kDebugMode) {
-        print('-------- Order placed successfully $orderID ----------');
+        // print('-------- Order placed successfully $orderID ----------');
       }
     } else {
       callback(false, response.statusText, '-1', zoneID, orderAmount, maxCodAmount);

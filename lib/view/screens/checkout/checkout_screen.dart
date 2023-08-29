@@ -308,14 +308,14 @@ class CheckoutScreenState extends State<CheckoutScreen> {
               deliveryCharge = PriceConverter.toFixed(deliveryCharge!);
               double total = subTotal + deliveryCharge;
               total = PriceConverter.toFixed(total);
-          print('tax : $tax');      
-          print('addOns: $addOns');
-          print('discount: $discount');
-          print('taxIncluded: $taxIncluded');
-          print('subtotal: $subTotal');
-          print('total: $total');
-          print('delivery charge: $deliveryCharge');
-          print('coupon discount: $couponDiscount');
+          // print('tax : $tax');      
+          // print('addOns: $addOns');
+          // print('discount: $discount');
+          // print('taxIncluded: $taxIncluded');
+          // print('subtotal: $subTotal');
+          // print('total: $total');
+          // print('delivery charge: $deliveryCharge');
+          // print('coupon discount: $couponDiscount');
         
               return (orderController.distance != null && locationController.addressList != null && storeController.store != null) ? Column(
                 children: [

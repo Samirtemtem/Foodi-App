@@ -25,7 +25,7 @@ class CartRepo{
     for (var cartModel in cartProductList) {
       carts.add(jsonEncode(cartModel));
     }
-    print('---------cart added :  $carts');
+    // print('---------cart added :  $carts');
     await sharedPreferences.setStringList(AppConstants.cartList, carts);
   }
 

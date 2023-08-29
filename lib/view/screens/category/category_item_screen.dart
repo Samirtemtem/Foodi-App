@@ -43,7 +43,7 @@ class CategoryItemScreenState extends State<CategoryItemScreen> with TickerProvi
         int pageSize = (Get.find<CategoryController>().pageSize! / 10).ceil();
         if (Get.find<CategoryController>().offset < pageSize) {
           if (kDebugMode) {
-            print('end of the page');
+            // print('end of the page');
           }
           Get.find<CategoryController>().showBottomLoader();
           Get.find<CategoryController>().getCategoryItemList(
@@ -61,7 +61,7 @@ class CategoryItemScreenState extends State<CategoryItemScreen> with TickerProvi
         int pageSize = (Get.find<CategoryController>().restPageSize! / 10).ceil();
         if (Get.find<CategoryController>().offset < pageSize) {
           if (kDebugMode) {
-            print('end of the page');
+            // print('end of the page');
           }
           Get.find<CategoryController>().showBottomLoader();
           Get.find<CategoryController>().getCategoryStoreList(

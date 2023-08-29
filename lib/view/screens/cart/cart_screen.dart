@@ -289,7 +289,7 @@ class _CartScreenState extends State<CartScreen> {
             for (Item item in storeController.cartSuggestItemModel!.items!) {
               if(cartIds.contains(item.id)){
                 if (kDebugMode) {
-                  print('it will not added -> ${storeController.cartSuggestItemModel!.items!.indexOf(item)}');
+                  // print('it will not added -> ${storeController.cartSuggestItemModel!.items!.indexOf(item)}');
                 }
               }else{
                 suggestedItems.add(item);

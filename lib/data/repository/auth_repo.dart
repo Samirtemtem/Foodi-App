@@ -68,7 +68,7 @@ class AuthRepo {
     }
     if (deviceToken != null) {
       if (kDebugMode) {
-        print('--------Device Token---------- $deviceToken');
+        // print('--------Device Token---------- $deviceToken');
       }
     }
     return deviceToken;

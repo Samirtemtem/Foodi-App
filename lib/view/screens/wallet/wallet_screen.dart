@@ -53,7 +53,7 @@ class _WalletScreenState extends State<WalletScreen> {
           if (Get.find<WalletController>().offset < pageSize) {
             Get.find<WalletController>().setOffset(Get.find<WalletController>().offset + 1);
             if (kDebugMode) {
-              print('end of the page');
+              // print('end of the page');
             }
             Get.find<WalletController>().showBottomLoader();
             Get.find<WalletController>().getWalletTransactionList(Get.find<WalletController>().offset.toString(), false, widget.fromWallet);
