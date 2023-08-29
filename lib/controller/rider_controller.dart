@@ -114,7 +114,7 @@ class RiderController extends GetxController implements GetxService {
     if(pickedDate != null ){
       _tripDate = DateConverter.dateToReadableDate(pickedDate);
     }else{
-      debugPrint("Date is not selected");
+      print("Date is not selected");
     }
     update();
   }

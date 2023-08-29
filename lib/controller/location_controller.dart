@@ -512,7 +512,9 @@ class LocationController extends GetxController implements GetxService {
   }
 
   void checkPermission(Function onTap) async {
+    print("checking permission");
     LocationPermission permission = await Geolocator.checkPermission();
+    print("window popped up");
     if(permission == LocationPermission.denied) {
       permission = await Geolocator.requestPermission();
     }

@@ -160,12 +160,12 @@ class AppConstants {
   ];
 
   /// order status..
-  static const String pending = 'pending';
-  static const String accepted = 'accepted';
-  static const String processing = 'processing';
-  static const String confirmed = 'confirmed';
-  static const String handover = 'handover';
-  static const String pickedUp = 'picked_up';
+  static const String pending = 'En attente';
+  static const String accepted = 'Acceptée';
+  static const String processing = 'En cours de traitement';
+  static const String confirmed = 'Confirmé';
+  static const String handover = 'En route';
+  static const String pickedUp = 'En route';
 
   ///user type..
   static const String user = 'user';
@@ -175,8 +175,8 @@ class AppConstants {
   static const String vendor = 'vendor';
 
   static List<LanguageModel> languages = [
-    LanguageModel(imageUrl: Images.arabic, languageName: 'عربى', countryCode: 'SA', languageCode: 'ar'),
-//   LanguageModel(imageUrl: Images.english, languageName: 'Français', countryCode: 'FR', languageCode: 'fr'),
+ //   LanguageModel(imageUrl: Images.arabic, languageName: 'عربى', countryCode: 'SA', languageCode: 'ar'),
+   LanguageModel(imageUrl: Images.english, languageName: 'Français', countryCode: 'FR', languageCode: 'fr'),
 //  LanguageModel(imageUrl: Images.arabic, languageName: 'Spanish', countryCode: 'ES', languageCode: 'es'),
 // LanguageModel(imageUrl: Images.english, languageName: 'English', countryCode: 'US', languageCode: 'en'),
 
