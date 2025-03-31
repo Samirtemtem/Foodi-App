@@ -42,8 +42,8 @@ class NotificationHelper {
 
     FirebaseMessaging.onMessage.listen((RemoteMessage message) {
       if (kDebugMode) {
-        print("onMessage: ${message.notification!.title}/${message.notification!.body}/${message.notification!.titleLocKey}");
-        print("onMessage type: ${message.data['type']}/${message.data}");
+        // print(nt("onMessage: ${message.notification!.title}/${message.notification!.body}/${message.notification!.titleLocKey}");
+        // print(nt("onMessage type: ${message.data['type']}/${message.data}");
       }
       if(message.data['type'] == 'message' && Get.currentRoute.startsWith(RouteHelper.messages)) {
         if(Get.find<AuthController>().isLoggedIn()) {
@@ -79,7 +79,7 @@ class NotificationHelper {
 
     FirebaseMessaging.onMessageOpenedApp.listen((RemoteMessage message) {
       if (kDebugMode) {
-        print("onOpenApp: ${message.notification!.title}/${message.notification!.body}/${message.notification!.titleLocKey}");
+        // print(nt("onOpenApp: ${message.notification!.title}/${message.notification!.body}/${message.notification!.titleLocKey}");
       }
       try{
         if(/*message.data != null ||*/ message.data.isNotEmpty) {
@@ -207,7 +207,7 @@ class NotificationHelper {
 
 Future<dynamic> myBackgroundMessageHandler(RemoteMessage message) async {
   if (kDebugMode) {
-    print("onBackground: ${message.notification!.title}/${message.notification!.body}/${message.notification!.titleLocKey}");
+    // print(nt("onBackground: ${message.notification!.title}/${message.notification!.body}/${message.notification!.titleLocKey}");
   }
   // var androidInitialize = new AndroidInitializationSettings('notification_icon');
   // var iOSInitialize = new IOSInitializationSettings();

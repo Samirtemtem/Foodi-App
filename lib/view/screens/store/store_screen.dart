@@ -140,7 +140,7 @@ class _StoreScreenState extends State<StoreScreen> {
                 ),
                 /*flexibleSpace: CustomizableSpaceBar(
                   builder: (context, scrollingRate) {
-                    print('--------?>>> $scrollingRate');
+                    // print('--------?>>> $scrollingRate');
                     /// Example content
                     return Padding(
                       padding: EdgeInsets.only(bottom: 0, left: 20 + 40 * scrollingRate),

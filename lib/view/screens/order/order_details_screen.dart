@@ -157,6 +157,19 @@ class OrderDetailsScreenState extends State<OrderDetailsScreen> {
           }
           double subTotal = itemsPrice + addOns;
           double total = itemsPrice + addOns - discount + (taxIncluded ? 0 : tax) + deliveryCharge - couponDiscount + dmTips;
+          /* debug */
+                      
+          // print('itemsPrice: $itemsPrice');
+          // print('addOns: $addOns');
+          // print('discount: $discount');
+          // print('taxIncluded: $taxIncluded');
+          // print('subtotal: $subTotal');
+          // print('total: $total');
+          // print('delivery charge: $deliveryCharge');
+          // print('coupon discount: $couponDiscount');
+          // print('dmTips: $dmTips');
+        
+          
 
           return orderController.orderDetails != null && order != null ? Column(children: [
 

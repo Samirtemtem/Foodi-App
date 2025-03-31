@@ -201,6 +201,6 @@ class _ReferAndEarnScreenState extends State<ReferAndEarnScreen> {
         break;
 
     }
-    debugPrint(response);
+    // print(response);
   }
 }

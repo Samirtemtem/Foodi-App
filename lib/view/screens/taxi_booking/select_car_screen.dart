@@ -51,8 +51,8 @@ class _SelectCarScreenState extends State<SelectCarScreen> {
       body: GetBuilder<CarSelectionController>(
         builder: (carSelectionController){
           if (kDebugMode) {
-            print("isCarFilterActive");
-            print(carSelectionController.isCarFilterActive);
+            // print("isCarFilterActive");
+            // print(carSelectionController.isCarFilterActive);
           }
           return ExpandableBottomSheet(
             background: GestureDetector(

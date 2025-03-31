@@ -277,7 +277,7 @@ class _WebLandingPageState extends State<WebLandingPage> {
                                   url = 'https://$url';
                                 }
                                 if (kDebugMode) {
-                                  print('Redirect to url: $url');
+                                  // print('Redirect to url: $url');
                                 }
                                 html.window.open(url, "_blank");
                               },

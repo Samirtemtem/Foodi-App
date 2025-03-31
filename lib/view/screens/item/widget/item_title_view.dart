@@ -24,7 +24,7 @@ class ItemTitleView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (kDebugMode) {
-      print(inStock ? 'out_of_stock'.tr : 'in_stock'.tr);
+      // print(inStock ? 'out_of_stock'.tr : 'in_stock'.tr);
     }
     final bool isLoggedIn = Get.find<AuthController>().isLoggedIn();
     double? startingPrice;

@@ -43,8 +43,8 @@ class NetworkInfo {
     );
     final ImageFile output = await compressor.compress(ImageFileConfiguration(input: input, config: config));
     if(kDebugMode) {
-      print('Input size : ${input.sizeInBytes / 1048576}');
-      print('Output size : ${output.sizeInBytes / 1048576}');
+      // print('Input size : ${input.sizeInBytes / 1048576}');
+      // print('Output size : ${output.sizeInBytes / 1048576}');
     }
     return XFile.fromData(output.rawBytes);
   }

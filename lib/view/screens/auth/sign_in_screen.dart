@@ -240,8 +240,6 @@ class SignInScreenState extends State<SignInScreen> {
     }
     if (phone.isEmpty) {
       showCustomSnackBar('enter_phone_number'.tr);
-    }else if (!isValid) {
-      showCustomSnackBar('invalid_phone_number'.tr);
     }else if (password.isEmpty) {
       showCustomSnackBar('enter_password'.tr);
     }else if (password.length < 6) {
@@ -267,7 +265,7 @@ class SignInScreenState extends State<SignInScreen> {
             }
           }
         }else {
-          showCustomSnackBar(status.message);
+          showCustomSnackBar("Verifier vos informations");
         }
       });
     }

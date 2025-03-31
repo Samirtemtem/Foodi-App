@@ -75,7 +75,7 @@ class _HtmlViewerScreenState extends State<HtmlViewerScreen> {
                       url = 'https://$url';
                     }
                     if (kDebugMode) {
-                      print('Redirect to url: $url');
+                      // print('Redirect to url: $url');
                     }
                     html.window.open(url, "_blank");
                   },

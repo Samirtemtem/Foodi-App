@@ -143,7 +143,7 @@ class MyInAppBrowser extends InAppBrowser {
   @override
   Future onLoadStart(url) async {
     if (kDebugMode) {
-      print("\n\nStarted: $url\n\n");
+    //  print("\n\nStarted: $url\n\n");
     }
     _redirect(url.toString());
   }
@@ -152,7 +152,7 @@ class MyInAppBrowser extends InAppBrowser {
   Future onLoadStop(url) async {
     pullToRefreshController?.endRefreshing();
     if (kDebugMode) {
-      print("\n\nStopped: $url\n\n");
+  //    print("\n\nStopped: $url\n\n");
     }
     _redirect(url.toString());
   }
@@ -203,11 +203,11 @@ class MyInAppBrowser extends InAppBrowser {
   @override
   void onConsoleMessage(consoleMessage) {
     if (kDebugMode) {
-      print("""
+   /*   print("""
     console output:
       message: ${consoleMessage.message}
       messageLevel: ${consoleMessage.messageLevel.toValue()}
-   """);
+   """);*/
     }
   }
 

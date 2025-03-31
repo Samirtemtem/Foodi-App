@@ -186,7 +186,7 @@ class CartController extends GetxController implements GetxService {
   int isExistInCart(int? itemID, String variationType, bool isUpdate, int? cartIndex) {
     for(int index=0; index<_cartList.length; index++) {
       if (kDebugMode) {
-        print('======${_cartList[index].toJson()}');
+        // print('======${_cartList[index].toJson()}');
       }
       if(_cartList[index].item!.id == itemID && (_cartList[index].variation!.isNotEmpty ? _cartList[index].variation![0].type
           == variationType : true)) {

@@ -110,7 +110,7 @@ class _MyAppState extends State<MyApp> {
     return GetBuilder<ThemeController>(builder: (themeController) {
 
       return GetBuilder<LocalizationController>(builder: (localizeController) {
-                print(localizeController.locale);
+                // print(localizeController.locale);
 
         return GetBuilder<SplashController>(builder: (splashController) {
           return (GetPlatform.isWeb && splashController.configModel == null) ? const SizedBox() : GetMaterialApp(

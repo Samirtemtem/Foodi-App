@@ -114,7 +114,7 @@ class RiderController extends GetxController implements GetxService {
     if(pickedDate != null ){
       _tripDate = DateConverter.dateToReadableDate(pickedDate);
     }else{
-      debugPrint("Date is not selected");
+      // print("Date is not selected");
     }
     update();
   }
@@ -144,7 +144,7 @@ class RiderController extends GetxController implements GetxService {
 
   void initializeData(String? riderType, AddressModel? address) {
     if (kDebugMode) {
-      print("riderType_initializeData:$riderType");
+      // print("riderType_initializeData:$riderType");
     }
     _fromAddress = address ?? Get.find<LocationController>().getUserAddress();
     _formTextEditingController.text = _fromAddress!.address!;
@@ -336,8 +336,8 @@ class RiderController extends GetxController implements GetxService {
     _distance = await Get.find<OrderController>().getDistanceInKM(from, to);
     _duration = await Get.find<OrderController>().getDistanceInKM(from, to, isDuration: true);
     if (kDebugMode) {
-      print('--------------distance------ : $_distance');
-      print('--------------duration------ : $_duration');
+      // print('--------------distance------ : $_distance');
+      // print('--------------duration------ : $_duration');
     }
     update();
   }
